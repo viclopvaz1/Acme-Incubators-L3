@@ -42,4 +42,7 @@ public class Notice extends DomainEntity {
 	@URL
 	private String				link;
 
+	@NotNull
+	private Boolean				finalMode;
+
 }

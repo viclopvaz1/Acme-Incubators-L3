@@ -55,6 +55,9 @@ master.menu.administrator.list-notice = Notice List
 master.menu.administrator.configuration = Spam List
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.statistics = Statistics
+master.menu.administrator.create-notice = Create Notice
+master.menu.administrator.inquirie = Inquirie List
+master.menu.administrator.create-inquirie = Create Inquirie
 
 # master.menu.authenticated ###################################################
 master.menu.authenticated = Authenticated

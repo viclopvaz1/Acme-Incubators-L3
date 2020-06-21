@@ -91,6 +91,7 @@
 		<property name="deadline" value="2020/12/01 10:35" />
 		<property name="body" value="This is a example" />
 		<property name="link" value="https://elcorreoweb.es/sevilla/previstos-avisos-amarillos-por-tormentas-en-sevilla-AD6621705" />
+		<property name="finalMode" value="false" />
 	</bean>
 	
 	<bean id="notice02" class="acme.entities.notices.Notice">
@@ -99,6 +100,7 @@
 		<property name="deadline" value="2020/12/01 10:35" />
 		<property name="body" value="This is a example" />
 		<property name="link" value="https://elcorreoweb.es/sevilla/previstos-avisos-amarillos-por-tormentas-en-sevilla-AD6621705" />
+		<property name="finalMode" value="false" />
 	</bean>
 	
 	<bean id="notice03" class="acme.entities.notices.Notice">
@@ -107,6 +109,7 @@
 		<property name="deadline" value="2020/12/01 10:35" />
 		<property name="body" value="This is a example" />
 		<property name="link" value="https://www.tussam.es/es/avisos-generales" />
+		<property name="finalMode" value="false" />
 	</bean>
 	
 	<bean id="notice04" class="acme.entities.notices.Notice">
@@ -115,6 +118,7 @@
 		<property name="deadline" value="2019/12/01 10:35" />
 		<property name="body" value="This is a example" />
 		<property name="link" value="https://www.tussam.es/es/avisos-generales" />
+		<property name="finalMode" value="false" />	
 	</bean>
 
 	<bean name="toolrecord01" class="acme.entities.toolrecords.ToolRecord">

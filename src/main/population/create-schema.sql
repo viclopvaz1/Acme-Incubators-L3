@@ -99,6 +99,7 @@
         `body` varchar(255),
         `creation_moment` datetime(6),
         `deadline` datetime(6),
+        `final_mode` bit,
         `header` varchar(255),
         `link` varchar(255),
         primary key (`id`)
