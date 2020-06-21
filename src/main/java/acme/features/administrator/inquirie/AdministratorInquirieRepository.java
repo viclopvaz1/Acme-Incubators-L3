@@ -15,7 +15,7 @@ public interface AdministratorInquirieRepository extends AbstractRepository {
 	@Query("select a from Inquirie a where a.id = ?1")
 	Inquirie findOneById(int id);
 
-	@Query("select a from Inquirie a")
+	@Query("select a from Inquirie a where a.deadline > CURRENT_TIMESTAMP")
 	Collection<Inquirie> findMany();
 
 }
