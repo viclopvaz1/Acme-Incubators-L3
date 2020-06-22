@@ -28,7 +28,7 @@ administrator.challenge.form.button.update = Actualizar
 administrator.challenge.form.button.delete = Borrar
 administrator.challenge.form.button.return = Volver
 
-administrator.challenge.form.error.tooClose = La Fecha de Fin debe estar una semana posterior a la fecha actual
+administrator.challenge.form.error.tooClose = La Fecha de Fin debe estar un mes posterior a la fecha actual
 administrator.challenge.form.error.zoneEurG = Solo se permite la moneda euro, EUR o €
 administrator.challenge.form.error.zoneEurS = Solo se permite la moneda euro, EUR o €
 administrator.challenge.form.error.zoneEurB = Solo se permite la moneda euro, EUR o €

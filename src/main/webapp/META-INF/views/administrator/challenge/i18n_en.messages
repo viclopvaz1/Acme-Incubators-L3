@@ -27,7 +27,7 @@ administrator.challenge.form.button.update = Update
 administrator.challenge.form.button.delete = Delete
 administrator.challenge.form.button.return = Return
 
-administrator.challenge.form.error.tooClose = Deadline must be one week after the current date
+administrator.challenge.form.error.tooClose = Deadline must be one moth after the current date
 administrator.challenge.form.error.zoneEurE = Only the euro, EUR or € currency is allowed
 administrator.challenge.form.error.zoneEurA = Only the euro, EUR or € currency is allowed
 administrator.challenge.form.error.zoneEurR = Only the euro, EUR or € currency is allowed
