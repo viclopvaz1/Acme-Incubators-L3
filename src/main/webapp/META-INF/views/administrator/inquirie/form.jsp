@@ -18,7 +18,7 @@
 <acme:form>
 	<acme:form-textbox code="administrator.inquirie.label.title" path="title"/>
 	<jstl:if test="${command != 'create'}">
-		<acme:form-moment code="administrator.notice.label.creationMoment" path="creationMoment"/>
+		<acme:form-moment code="administrator.notice.label.creationMoment" path="creationMoment" readonly="true"/>
 	</jstl:if>
 	<acme:form-moment code="administrator.inquirie.label.deadline" path="deadline"/>
 	<acme:form-textarea code="administrator.inquirie.label.description" path="description"/>
