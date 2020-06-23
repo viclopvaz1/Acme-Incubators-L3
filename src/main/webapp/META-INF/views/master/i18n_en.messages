@@ -55,6 +55,14 @@ master.menu.administrator.list-notice = Notice List
 master.menu.administrator.configuration = Spam List
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.statistics = Statistics
+master.menu.administrator.create-overture = Create Overtures
+master.menu.administrator.create-technology-record = Create Technology Record
+master.menu.administrator.list-overture = List Overtures
+master.menu.administrator.list-technology-record = List Technology Record
+master.menu.administrator.create-credit-card = Create Credit Card
+master.menu.administrator.list-credit-card = List Credit Card
+master.menu.administrator.create-banner = Create Banner
+master.menu.administrator.list-banner = List Banners
 
 # master.menu.authenticated ###################################################
 master.menu.authenticated = Authenticated

@@ -23,10 +23,11 @@
     create table `banner` (
        `id` integer not null,
         `version` integer not null,
+        `final_mode` bit not null,
+        `num_credit_card` integer not null,
         `picture` varchar(255),
         `slogan` varchar(255),
         `target_url` varchar(255),
-        `credit_card_id` integer,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -75,6 +76,7 @@
         `month_exp` integer,
         `number` varchar(255),
         `year_exp` integer,
+        `banner_id` integer,
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -133,7 +135,7 @@
         `version` integer not null,
         `description` varchar(255),
         `email` varchar(255),
-        `indication` bit,
+        `indication` bit not null,
         `name` varchar(255),
         `sector` varchar(255),
         `star` integer,
@@ -147,7 +149,7 @@
         `version` integer not null,
         `description` varchar(255),
         `email` varchar(255),
-        `indication` bit,
+        `indication` bit not null,
         `name` varchar(255),
         `sector` varchar(255),
         `star` integer,
@@ -219,15 +221,15 @@
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
 
-    alter table `banner` 
-       add constraint `FKr19baq0bri0akndc7ruwhngy4` 
-       foreign key (`credit_card_id`) 
-       references `credit_card` (`id`);
-
     alter table `consumer` 
        add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
+
+    alter table `credit_card` 
+       add constraint `FKa4pbn9v8sv66p46fsrke8ow89` 
+       foreign key (`banner_id`) 
+       references `banner` (`id`);
 
     alter table `provider` 
        add constraint FK_b1gwnjqm6ggy9yuiqm0o4rlmd 
