@@ -22,14 +22,15 @@
 		<property name="picture" value="https://sevilla.abc.es/deportes/alfinaldelapalmera/wp-content/uploads/2018/06/Mividabetis.jpg" />
 		<property name="slogan" value="Yo soy del betis" />
 		<property name="targetUrl" value="https://www.realbetisbalompie.es/" />
-		<property name="creditCard"><null/></property>
+		<property name="finalMode" value="false" />
 	</bean>
 	
 	<bean name="banner02" class="acme.entities.banners.Banner">
 		<property name="picture" value="https://sevilla.abc.es/deportes/alfinaldelapalmera/wp-content/uploads/2018/06/Mividabetis.jpg" />
 		<property name="slogan" value="Yo soy del betis también" />
 		<property name="targetUrl" value="https://www.realbetisbalompie.es/" />
-		<property name="creditCard" ref="creditcard01" />
+		<property name="finalMode" value="true" />
+		<property name="numCreditCard" value="1" />
 	</bean>
 	
 	<bean name="creditcard01" class="acme.entities.creditcards.CreditCard">
@@ -39,6 +40,7 @@
 		<property name="monthExp" value="2" />
 		<property name="yearExp" value="2021" />
 		<property name="cvv" value="021"/>
+		<property name="banner" ref="banner02" />
 	</bean>
 	
 	<bean name="technologyrecord01" class="acme.entities.technologyrecords.TechnologyRecord">
@@ -91,6 +93,7 @@
 		<property name="deadline" value="2020/12/01 10:35" />
 		<property name="body" value="This is a example" />
 		<property name="link" value="https://elcorreoweb.es/sevilla/previstos-avisos-amarillos-por-tormentas-en-sevilla-AD6621705" />
+		<property name="finalMode" value="false" />
 	</bean>
 	
 	<bean id="notice02" class="acme.entities.notices.Notice">
@@ -99,6 +102,7 @@
 		<property name="deadline" value="2020/12/01 10:35" />
 		<property name="body" value="This is a example" />
 		<property name="link" value="https://elcorreoweb.es/sevilla/previstos-avisos-amarillos-por-tormentas-en-sevilla-AD6621705" />
+		<property name="finalMode" value="false" />
 	</bean>
 	
 	<bean id="notice03" class="acme.entities.notices.Notice">
@@ -107,6 +111,7 @@
 		<property name="deadline" value="2020/12/01 10:35" />
 		<property name="body" value="This is a example" />
 		<property name="link" value="https://www.tussam.es/es/avisos-generales" />
+		<property name="finalMode" value="false" />
 	</bean>
 	
 	<bean id="notice04" class="acme.entities.notices.Notice">
@@ -115,6 +120,7 @@
 		<property name="deadline" value="2019/12/01 10:35" />
 		<property name="body" value="This is a example" />
 		<property name="link" value="https://www.tussam.es/es/avisos-generales" />
+		<property name="finalMode" value="false" />	
 	</bean>
 
 	<bean name="toolrecord01" class="acme.entities.toolrecords.ToolRecord">

@@ -15,12 +15,25 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
-<acme:form readonly="true">
-	<acme:form-textbox code="administrator.notice.label.header" path="header"/>
-	<acme:form-textbox code="administrator.notice.label.creationMoment" path="creationMoment"/>
-	<acme:form-textbox code="administrator.notice.label.deadline" path="deadline"/>
+<acme:form>
+	<acme:form-url code="administrator.notice.label.header" path="header"/>
+	
+	<jstl:if test="${command != 'create'}">
+		<acme:form-textbox code="administrator.notice.label.creationMoment" path="creationMoment"/>
+	</jstl:if>
+	<acme:form-moment code="administrator.notice.label.deadline" path="deadline"/>
 	<acme:form-textarea code="administrator.notice.label.body" path="body"/>
 	<acme:form-url code="administrator.notice.label.link" path="link"/>
+	
 
-  	<acme:form-return code="administrator.notice.form.button.return"/>
+	
+	<jstl:if test="${command == 'create'}">
+		<acme:form-checkbox code="administrator.notice.label.finalMode" path="finalMode"/>
+		<acme:form-submit test="${command == 'create' }"
+		code="administrator.notice.form.button.create" 
+		action="/administrator/notice/create"/>
+		
+	</jstl:if>
+	
+	<acme:form-return code="administrator.notice.form.button.return" />
 </acme:form>

@@ -39,7 +39,7 @@ public class ToolRecord extends DomainEntity {
 	@Email
 	private String				email;
 
-	private Boolean				indication;
+	private boolean				indication;
 
 	@Range(min = -5, max = 5)
 	private Integer				star;

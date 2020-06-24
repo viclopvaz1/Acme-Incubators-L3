@@ -20,3 +20,9 @@ administrator.notice.list.label.creationMoment = Moment
 administrator.notice.list.label.deadline = Deadline
 administrator.notice.list.label.body = Body
 administrator.notice.label.link = Link
+administrator.notice.label.finalMode = Final Mode
+
+administrator.notice.form.button.create = Create Notice
+
+administrator.notice.form.error.tooClose = Deadline must be one week after the current date
+administrator.notice.error.finalMode = To be able to create it, it must be in final mode
