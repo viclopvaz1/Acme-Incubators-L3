@@ -55,6 +55,14 @@ master.menu.administrator.list-notice = Lista de Noticias
 master.menu.administrator.configuration = Lista de Spam
 master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.statistics = Estadisticas
+master.menu.administrator.create-overture = Crear Peticiones
+master.menu.administrator.create-technology-record = Crear Registro de Tecnologia
+master.menu.administrator.list-overture = Listar Peticiones
+master.menu.administrator.list-technology-record = Listar Registros de Tecnologia
+master.menu.administrator.create-credit-card = Crear Tarjeta de Credito
+master.menu.administrator.list-credit-card = Listar Tarjeta de Credito
+master.menu.administrator.create-banner = Crear Banner
+master.menu.administrator.list-banner = Listar Banners
 master.menu.administrator.create-challenge = Crear reto
 master.menu.administrator.create-tool-record = Crear registro de herramienta
 master.menu.administrator.list-challenge = Listar retos
@@ -69,9 +77,9 @@ master.menu.authenticated = Autentificado
 master.menu.authenticated.list-notice = Lista de Avisos
 master.menu.authenticated.list-technology-record = Lista de Registro de Tecnologia
 master.menu.authenticated.list-tool-record = Lista de Registro de Herramienta
-master.menu.authenticated.list-inquirie = Lista de consultas
-master.menu.authenticated.list-overture = Lista de peticiones
-master.menu.authenticated.list-challenge = Lista de retos
+master.menu.authenticated.list-inquirie = Lista de Consultas
+master.menu.authenticated.list-overture = Lista de Peticiones
+master.menu.authenticated.list-challenge = Lista de Retos
 
 # master.menu.provider ########################################################
 

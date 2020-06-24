@@ -2,12 +2,15 @@
 package acme.entities.creditcards;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.CreditCardNumber;
 import org.hibernate.validator.constraints.Range;
 
+import acme.entities.banners.Banner;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
 import lombok.Setter;
@@ -38,5 +41,10 @@ public class CreditCard extends DomainEntity {
 
 	@NotNull
 	private Integer				cvv;
+
+	@Valid
+	@NotNull
+	@OneToOne
+	private Banner				banner;
 
 }

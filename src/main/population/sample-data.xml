@@ -22,14 +22,15 @@
 		<property name="picture" value="https://sevilla.abc.es/deportes/alfinaldelapalmera/wp-content/uploads/2018/06/Mividabetis.jpg" />
 		<property name="slogan" value="Yo soy del betis" />
 		<property name="targetUrl" value="https://www.realbetisbalompie.es/" />
-		<property name="creditCard"><null/></property>
+		<property name="finalMode" value="false" />
 	</bean>
 	
 	<bean name="banner02" class="acme.entities.banners.Banner">
 		<property name="picture" value="https://sevilla.abc.es/deportes/alfinaldelapalmera/wp-content/uploads/2018/06/Mividabetis.jpg" />
 		<property name="slogan" value="Yo soy del betis también" />
 		<property name="targetUrl" value="https://www.realbetisbalompie.es/" />
-		<property name="creditCard" ref="creditcard01" />
+		<property name="finalMode" value="true" />
+		<property name="numCreditCard" value="1" />
 	</bean>
 	
 	<bean name="creditcard01" class="acme.entities.creditcards.CreditCard">
@@ -39,6 +40,7 @@
 		<property name="monthExp" value="2" />
 		<property name="yearExp" value="2021" />
 		<property name="cvv" value="021"/>
+		<property name="banner" ref="banner02" />
 	</bean>
 	
 	<bean name="technologyrecord01" class="acme.entities.technologyrecords.TechnologyRecord">
