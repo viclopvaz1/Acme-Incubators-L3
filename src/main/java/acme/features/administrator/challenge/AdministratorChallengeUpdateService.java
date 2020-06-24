@@ -73,7 +73,7 @@ public class AdministratorChallengeUpdateService implements AbstractUpdateServic
 
 		if (!errors.hasErrors("deadline")) {
 			calendar = new GregorianCalendar();
-			calendar.add(Calendar.DAY_OF_MONTH, 7);
+			calendar.add(Calendar.MONTH, +1);
 			minimunDeadline = calendar.getTime();
 			errors.state(request, entity.getDeadline().after(minimunDeadline), "deadline", "administrator.challenge.form.error.tooClose");
 		}

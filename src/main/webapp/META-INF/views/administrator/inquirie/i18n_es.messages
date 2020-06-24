@@ -33,3 +33,4 @@ administrator.inquirie.form.button.delete = Borrar Inquirie
 administrator.inquirie.form.error.zoneEurMax = Solo se permite la moneda euro, EUR o €
 administrator.inquirie.form.error.zoneEurMin = Solo se permite la moneda euro, EUR o €
 administrator.inquirie.form.error.maxR = Max Money debe ser mayor que Min Money
+administrator.inquirie.form.error.tooClose = La Fecha de Fin debe estar una semana posterior a la Fecha Actual

@@ -16,7 +16,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
-	<acme:form-textbox code="administrator.notice.label.header" path="header"/>
+	<acme:form-url code="administrator.notice.label.header" path="header"/>
 	
 	<jstl:if test="${command != 'create'}">
 		<acme:form-textbox code="administrator.notice.label.creationMoment" path="creationMoment"/>
