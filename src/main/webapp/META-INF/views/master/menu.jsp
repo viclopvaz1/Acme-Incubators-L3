@@ -59,12 +59,18 @@
 			<acme:menu-suboption code="master.menu.administrator.shutdown" action="/master/shutdown"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.list-notice" action="/administrator/notice/list" />
+			<acme:menu-suboption code="master.menu.administrator.create-notice" action="/administrator/notice/create"/>
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.configuration" action="/administrator/configuration/list" />	
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show" />	
-		<acme:menu-separator/>
+			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.statistics" action="/administrator/statistics/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.inquirie" action="/administrator/inquirie/list"/>
+			<acme:menu-suboption code="master.menu.administrator.create-inquirie" action="/administrator/inquirie/create"/>
+			
+			
 			
 			<acme:menu-separator/>
 		

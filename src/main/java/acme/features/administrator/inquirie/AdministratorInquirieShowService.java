@@ -1,44 +1,44 @@
 
-package acme.features.administrator.notice;
+package acme.features.administrator.inquirie;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.notices.Notice;
+import acme.entities.inquiries.Inquirie;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Administrator;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AdministratorNoticeShowService implements AbstractShowService<Administrator, Notice> {
+public class AdministratorInquirieShowService implements AbstractShowService<Administrator, Inquirie> {
 
 	@Autowired
-	AdministratorNoticeRepository repository;
+	AdministratorInquirieRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Notice> request) {
+	public boolean authorise(final Request<Inquirie> request) {
 		assert request != null;
 
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Notice> request, final Notice entity, final Model model) {
+	public void unbind(final Request<Inquirie> request, final Inquirie entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "header", "creationMoment", "deadline", "body", "link", "finalMode");
+		request.unbind(entity, model, "title", "creationMoment", "deadline", "description", "maxMoney", "minMoney", "email");
 
 	}
 
 	@Override
-	public Notice findOne(final Request<Notice> request) {
+	public Inquirie findOne(final Request<Inquirie> request) {
 		assert request != null;
 
-		Notice result;
+		Inquirie result;
 		int id;
 
 		id = request.getModel().getInteger("id");
