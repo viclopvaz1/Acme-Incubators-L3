@@ -18,12 +18,13 @@
 
 <tiles-definitions>
 
-	<definition name="administrator/configuration/form" extends="master">		
-		<put-attribute name="body" type="template" value="../administrator/configuration/form.jsp" />
+	<definition name="administrator/inquirie/form" extends="master">		
+		<put-attribute name="body" type="template" value="../administrator/inquirie/form.jsp" />
+	</definition>	
+
+	<definition name="administrator/inquirie/list" extends="master">		
+		<put-attribute name="body" type="template" value="../administrator/inquirie/list.jsp" />
 	</definition>
 
-	<definition name="administrator/configuration/list" extends="master">		
-		<put-attribute name="body" type="template" value="../administrator/configuration/list.jsp" />
-	</definition>
-	
+
 </tiles-definitions>

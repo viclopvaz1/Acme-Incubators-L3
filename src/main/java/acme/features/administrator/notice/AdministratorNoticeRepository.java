@@ -15,7 +15,7 @@ public interface AdministratorNoticeRepository extends AbstractRepository {
 	@Query("select a from Notice a where a.id = ?1")
 	Notice findOneById(int id);
 
-	@Query("select a from Notice a")
+	@Query("select a from Notice a where a.deadline > CURRENT_TIMESTAMP")
 	Collection<Notice> findMany();
 
 }

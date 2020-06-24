@@ -59,6 +59,9 @@ master.menu.administrator.create-challenge = Create challenge
 master.menu.administrator.create-tool-record = Create tool record
 master.menu.administrator.list-challenge = List challenge
 master.menu.administrator.list-tool-record = List Tool Record
+master.menu.administrator.create-notice = Create Notice
+master.menu.administrator.inquirie = Inquirie List
+master.menu.administrator.create-inquirie = Create Inquirie
 
 # master.menu.authenticated ###################################################
 master.menu.authenticated = Authenticated
