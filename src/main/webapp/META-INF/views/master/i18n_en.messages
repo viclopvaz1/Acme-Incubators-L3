@@ -63,6 +63,13 @@ master.menu.administrator.create-credit-card = Create Credit Card
 master.menu.administrator.list-credit-card = List Credit Card
 master.menu.administrator.create-banner = Create Banner
 master.menu.administrator.list-banner = List Banners
+master.menu.administrator.create-challenge = Create challenge
+master.menu.administrator.create-tool-record = Create tool record
+master.menu.administrator.list-challenge = List challenge
+master.menu.administrator.list-tool-record = List Tool Record
+master.menu.administrator.create-notice = Create Notice
+master.menu.administrator.inquirie = Inquirie List
+master.menu.administrator.create-inquirie = Create Inquirie
 
 # master.menu.authenticated ###################################################
 master.menu.authenticated = Authenticated
