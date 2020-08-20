@@ -28,7 +28,10 @@ public class AdministratorCreditCardCreateService implements AbstractCreateServi
 	@Override
 	public boolean authorise(final Request<CreditCard> request) {
 		assert request != null;
-		return true;
+
+		Integer bannerid = request.getModel().getInteger("bannerid");
+
+		return this.repository.findCreditCardByBannerId(bannerid) == 0;
 	}
 
 	@Override

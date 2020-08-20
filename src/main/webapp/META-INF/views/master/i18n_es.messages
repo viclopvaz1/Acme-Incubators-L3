@@ -68,8 +68,8 @@ master.menu.administrator.create-tool-record = Crear registro de herramienta
 master.menu.administrator.list-challenge = Listar retos
 master.menu.administrator.list-tool-record = Listar registro de herramienta
 master.menu.administrator.create-notice = Crear Noticia
-master.menu.administrator.inquirie = Lista de Inquiries
-master.menu.administrator.create-inquirie = Crear Inquirie
+master.menu.administrator.inquirie = Lista de Consultas
+master.menu.administrator.create-inquirie = Crear Consulta
 
 
 # master.menu.authenticated ###################################################

@@ -24,10 +24,8 @@
 	</jstl:if>
 
 	<acme:form-submit test="${command == 'create'}" code="administrator.banner.form.button.create" action="create"/>
-	<acme:form-submit test="${command == 'show' && finalMode == false}" code="administrator.banner.form.button.update" action="update"/>
-	<acme:form-submit test="${command == 'show'}" code="administrator.banner.form.button.delete" action="delete"/>
-	<acme:form-submit test="${command == 'update'}" code="administrator.banner.form.button.update" action="update"/>
-	<acme:form-submit test="${command == 'delete'}" code="administrator.banner.form.button.delete" action="delete"/>
+	<acme:form-submit test="${(command == 'show' || command == 'update') && finalMode == false}" code="administrator.banner.form.button.update" action="update"/>
+	<acme:form-submit test="${command == 'show' || command == 'delete'}" code="administrator.banner.form.button.delete" action="delete"/>
 		
 	<acme:form-submit test="${(command == 'show' || command == 'update') && numCreditCard == 1}" code="administrator.banner.form.button.credit-card" action="/administrator/credit-card/show?bannerid=${id}&finalmodel=${finalMode}"  method="get"/>
 	<acme:form-submit test="${(command == 'show' || command == 'update') && finalMode == false && numCreditCard == 0}" code="administrator.banner.form.button.create-credit-card" action="/administrator/credit-card/create?bannerid=${id}" method="get"/>
